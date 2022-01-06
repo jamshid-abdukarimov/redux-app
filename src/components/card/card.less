@@ -1,0 +1,71 @@
+.back-btn {
+  width: 80px;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  border: 1px solid crimson;
+  background-color: crimson;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: transparent;
+  color: crimson;
+  border: 1px solid crimson;
+}
+
+.card {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  border: 3px solid lightseagreen;
+  padding: 20px;
+
+  &-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .stars {
+    margin-left: auto;
+  }
+
+  &-content {
+    display: flex;
+  }
+
+  &-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top center;
+    border: 2px solid black;
+    padding: 5px;
+    margin-right: 50px;
+  }
+
+  .contributors {
+    h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin: 10px 0;
+    }
+    .contributors-item {
+      display: flex;
+      flex-wrap: wrap;
+
+      span {
+        margin-right: 7px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
